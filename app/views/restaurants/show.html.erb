@@ -1,0 +1,9 @@
+<ul>
+  <li><%= @restaurant.name %></li>
+  <li><%= @restaurant.address %></li>
+  <li><%= @restaurant.phone_number %></li>
+  <li><%= @restaurant.category %></li>
+  <% @restaurant.reviews.each do |review| %>
+  <li> <%= review.content %> / <%= review.rating %></li>
+  <% end %>
+</ul>
